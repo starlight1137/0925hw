@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻牌遊戲</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <h1>翻牌遊戲</h1>
+    <div>
+        <label for="theme">選擇主題:</label>
+        <select id="theme">
+            <option value="theme1">人物</option>
+            <option value="theme2">動物</option>
+        </select>
+    </div>
+    <div id="flipButtons" style="margin-top: 10px;">
+        <button type="button" class="btn btn-primary" id="startGame">開始遊戲</button>
+        <button type="button" class="btn btn-danger" id="resetGame">重選主題</button>
+    </div>
+    
+
+    <div id="flipButtons" style="margin-top: 10px;">
+        <button type="button" class="btn btn-warning" id="flipAllFront">全部翻到正面</button>
+        <button type="button" class="btn btn-warning" id="flipAllBack">全部翻到背面</button>
+    </div>
+
+    <div id="countdown" class="countdown"></div>
+
+    <div class="container" id="cardContainer">
+        <!-- 卡片會在開始遊戲後動態生成 -->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
